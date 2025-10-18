@@ -105,7 +105,7 @@ with st.expander("➕ Add a new task", expanded=True):
                 due_str = due_date_value.isoformat() if due_date_value else None
                 add_todo(title.strip(), description.strip(), priority, due_str)
                 st.success("Task added ✅")
-                st.experimental_rerun()
+                st.rerun()
 
 # Controls: search / filters / sort
 st.markdown("---")
@@ -173,7 +173,7 @@ else:
             but_complete = cols[1].checkbox("Done", value=bool(row["completed"]), key=f"done_{row['id']}")
             if but_complete != bool(row["completed"]):
                 set_completed(row["id"], but_complete)
-                st.experimental_rerun()
+                st.rerun()
 
             # Edit and Delete as small buttons
             c1, c2 = st.columns([1,1])
@@ -201,11 +201,11 @@ else:
                         else:
                             update_todo(row["id"], new_title.strip(), new_desc.strip(), new_priority, new_due_str)
                             st.success("Updated")
-                            st.experimental_rerun()
+                            st.rerun()
             if c2.button("Delete", key=f"del_{row['id']}"):
                 delete_todo(row["id"])
                 st.warning("Deleted")
-                st.experimental_rerun()
+                st.rerun()
 
 st.markdown("---")
 st.caption("Built with ❤️ using Streamlit — simple, local SQLite persistence by default.")
@@ -219,7 +219,7 @@ if st.sidebar.button("Clear completed"):
     conn.commit()
     conn.close()
     st.sidebar.success("Cleared completed tasks")
-    st.experimental_rerun()
+    st.rerun()
 
 if st.sidebar.button("Export tasks (CSV)"):
     todos_all = fetch_todos()
