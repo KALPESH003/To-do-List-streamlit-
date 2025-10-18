@@ -208,8 +208,17 @@ else:
                 st.rerun()
 
 st.markdown("---")
-st.caption("Built with ❤️ by Kalpesh Suthar, using Streamlit — simple, local SQLite persistence by default.")
-st.sidebar.info("👋 Built by Kalpesh Suthar — MSc IT | Streamlit Demo Project")
+st.caption("Built by Kalpesh Suthar, using Streamlit — simple, local SQLite persistence by default.")
+st.sidebar.info(
+    "### Hey, Welcome to your To-Do App!\n"
+    "This is a simple and intuitive app to help you **organise your tasks** and **boost productivity.**\n\n"
+    "**How to get started:**\n"
+    "1️⃣ Add a new task in the text box.\n"
+    "2️⃣ Mark tasks as complete by checking them off.\n"
+    "3️⃣ Keep an eye on your progress!\n\n"
+    "Built with ❤️ by **Kalpesh Suthar** 🙂"
+)
+
 
 # Footer: helpful buttons
 st.sidebar.header("Quick actions")
