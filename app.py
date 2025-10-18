@@ -213,9 +213,9 @@ st.sidebar.info(
     "### Hey, Welcome to your To-Do App!\n"
     "This is a simple and intuitive app to help you **organise your tasks** and **boost productivity.**\n\n"
     "**How to get started:**\n"
-    "\n 1️⃣ Add a new task in the text box."
-    "\n 2️⃣ Mark tasks as complete by checking them off."
-    "\n 3️⃣ Keep an eye on your progress!"
+    "\n 1️⃣ Add a new task in the text box.  \n"
+    "\n 2️⃣ Mark tasks as complete by checking them off.  \n"
+    "\n 3️⃣ Keep an eye on your progress!  \n"
     "\n\n Built by **Kalpesh Suthar**"
 )
 
