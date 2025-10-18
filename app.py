@@ -215,8 +215,8 @@ st.sidebar.info(
     "**How to get started:**\n"
     "\n 1️⃣ Add a new task in the text box."
     "\n 2️⃣ Mark tasks as complete by checking them off."
-    "\n\n 3️⃣ Keep an eye on your progress!"
-    "Built by **Kalpesh Suthar**"
+    "\n 3️⃣ Keep an eye on your progress!"
+    "\n\n Built by **Kalpesh Suthar**"
 )
 
 
