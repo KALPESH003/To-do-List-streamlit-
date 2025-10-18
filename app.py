@@ -208,7 +208,8 @@ else:
                 st.rerun()
 
 st.markdown("---")
-st.caption("Built with ❤️ using Streamlit — simple, local SQLite persistence by default.")
+st.caption("Built with ❤️ by Kalpesh Suthar, using Streamlit — simple, local SQLite persistence by default.")
+st.sidebar.info("👋 Built by Kalpesh Suthar — MSc IT | Streamlit Demo Project")
 
 # Footer: helpful buttons
 st.sidebar.header("Quick actions")
